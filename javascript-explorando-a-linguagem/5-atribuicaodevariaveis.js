@@ -14,6 +14,19 @@ console.log(`Meu nome é ${primeiroNome} ${sobrenome}`); //interpolação
 const nomeCompleto = primeiroNome + sobrenome;
 console.log(nomeCompleto);
 
-let contador = 1;
-contador = contador + 2;
-console.log(`O resultado é ${contador} `);
+
+
+// TESTANDO MEUS CONHECIMENTOS:
+
+console.log("Testando meus Conhecimentos:");
+
+const taxa = 200
+const numeroParcelas = 10;
+
+let preco = 800; //declarando variável
+preco = preco + taxa; //atribuindo valor
+
+let valorParcelas;
+valorParcelas = preco / numeroParcelas;
+
+console.log(`${primeiroNome} ${sobrenome}, você pagará ${numeroParcelas} parcelas de R$ ${valorParcelas}. O valor total é R$ ${preco}.`);
