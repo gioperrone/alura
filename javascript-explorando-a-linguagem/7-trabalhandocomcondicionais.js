@@ -26,8 +26,7 @@ console.log(listaDeDestinos);
 // }
 
 
-if (
-    idadeComprador >= 18 || estaAcompanhada == true) { //"||" significa "ou"; "&&" significa "e"
+if (idadeComprador >= 18 || estaAcompanhada == true) { //"||" significa "ou"; "&&" significa "e"
     console.log("Passagem adquirida. Boa viagem!");
     listaDeDestinos.splice(2, 1);
 } else {
