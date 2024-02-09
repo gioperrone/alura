@@ -8,7 +8,7 @@ const listaDeDestinos = new Array(
 const idadeComprador = 19;
 const estaAcompanhada = false;
 let temPassagemComprada = false;
-const destino = "Salvador";
+const destino = "Rio de Janeiro";
 
 console.log(`\nDestinos Possíveis:`);
 console.log(listaDeDestinos);
@@ -28,3 +28,15 @@ while(contador < 3) { //quantidade de itens na lista
 }
 
 console.log("Destino existe: ", destinoExiste);
+
+if(podeComprar && destinoExiste) {
+    console.log("Boa viagem!");
+} else {
+    console.log("Desculpe, tivemos um erro.");
+}
+
+for(let i = 0; i < 3; i++) { //Outra forma de fazer loop. No for ";" significa divisor.
+    if(listaDeDestinos[contador] == destino) {
+        destinoExiste = true;
+    }
+}
