@@ -1,17 +1,20 @@
-function tocaSomPom() {
-    document.querySelector('#som_tecla_pom').play();
+function tocaSom(idElementoAudio) {
+    document.querySelector(idElementoAudio).play();
 }
 
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-let contador = 0;
 
+for(let contador = 0; contador < listaDeTeclas.length; contador++) { //length = número de índices da lista
+    
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1]; //"1" pois queremos pegar o 2º índice das classes
+    const idAudio = `#som_${instrumento}`; //"som_" pois o nome de toda ID começa assim, e o restante varia, sendo essas os mesmos nomes que estão variando nas classes. Observar no index.html.
+    
 
-while(contador < listaDeTeclas.length) { //length = número de elemnentos da lista
-    listaDeTeclas[contador].onclick = tocaSomPom;
+    tecla.onclick = function() { //função anônima
+        tocaSom(idAudio);
+    }
 
-    contador += 1;
-
-    console.log(contador);
 }
