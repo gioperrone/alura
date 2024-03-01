@@ -24,6 +24,11 @@ header {
                 text-decoration: none;
                 @include mixins.ff-fs-fc(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
                 font-weight: 500;
+                &:hover {
+                    transform: scale(1.2);
+                    transition-duration: 0.2s;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -58,11 +63,16 @@ header {
             font-size: 1.3rem;
             font-weight: 600;
             color: white;
-            background-color: variaveis.$cor-secundaria;
+            background-color: variaveis.$cor-default;
             border: none;
             outline: none;
             border-radius: 66px;
             cursor: pointer;
+            &:hover {
+                transform: scale(1.02);
+                transition-duration: 0.5s;
+                background-color: variaveis.$cor-secundaria;
+            }
         }
     }
 }
