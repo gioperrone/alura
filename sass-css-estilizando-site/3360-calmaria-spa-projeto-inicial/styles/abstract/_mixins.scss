@@ -2,3 +2,9 @@
     margin: 0 auto;
     width: $width;
 };
+
+@mixin ff-fs-fc($f-family, $f-size, $f-color) {
+    font-family: $f-family;
+    font-size: $f-size;
+    color: $f-color;
+}

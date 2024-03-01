@@ -2,4 +2,20 @@
 
 #nosso-espaco {
     @include mixins.margem-central(80%);
+    .detalhes {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        .imgs-espaco {
+            max-width: 500px;
+        }
+        .espaco-textos {
+            @extend .imgs-espaco;
+            .separador {
+                width: 100%;
+            }
+        }
+    }
 };
