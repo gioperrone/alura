@@ -1,46 +1,4 @@
-// Variáveis
-    // cores
-    $cor-primaria: #0C0421;
-    $cor-secundaria: #4E75FF;
-    $cor-terciaria: #85A0FF;
-    $cor-quaternaria: #E8F5C8;
-    $cor-default: #CAD4FA;
-    $gradiente-primario: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
-    $gradiente-secundario: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
-    //fontes
-    $ft-textos: "Montserrat", sans-serif;
-    $ft-titulos: "Krona One";
+@use './abstract/root';
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background: $gradiente-primario;
-    padding: 2rem;
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.6rem;
-        .linha {
-            border-top: 1px solid black;
-            width: 80%;
-        }
-        ul {
-            display: inline-flex;
-            gap: 2rem;
-            li {
-                list-style-type: none;
-            }
-            a {
-                text-decoration: none;
-                color: $cor-primaria;
-                font-weight: 500;
-                font-family: $ft-textos;
-            }
-        }
-    }
-}
+@use './components/header';
+@use './components/nosso-espaco';
