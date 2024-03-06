@@ -19,5 +19,25 @@
         border: 1px solid variaveis.$cor-secundaria;
         border-radius: 65px;
         margin: 0 auto;
+        display: inline-flex;
+        input {
+            @include mixins.ff-fs-fc(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
+            width: calc($largura-input * 0.65);
+            border: none;
+            outline: none;
+            margin-left: 2rem;
+        }
+        button {
+            @include mixins.ff-fs-fc(variaveis.$ft-textos, 1.2rem, white);
+            width: calc($largura-input * 0.35);
+            background: variaveis.$cor-secundaria;
+            border-radius: 0 65px 65px 0;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                transition-duration: 0.5s;
+                background: variaveis.$cor-terciaria;
+            }
+        }
     }
 }

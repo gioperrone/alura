@@ -165,4 +165,28 @@ header #home .btn-main:hover {
   border: 1px solid #4E75FF;
   border-radius: 65px;
   margin: 0 auto;
+  display: inline-flex;
+}
+#desconto .input-btn input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+  width: 513.5px;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+#desconto .input-btn button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  width: 276.5px;
+  background: #4E75FF;
+  border-radius: 0 65px 65px 0;
+  border: none;
+  cursor: pointer;
+}
+#desconto .input-btn button:hover {
+  transition-duration: 0.5s;
+  background: #85A0FF;
 }/*# sourceMappingURL=styles.css.map */
