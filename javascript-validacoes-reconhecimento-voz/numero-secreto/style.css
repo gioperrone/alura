@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #11093d;
+    --primary-color: #7752FE;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0 10px;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 20px 10px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin: 40px 10px;
+}
+
+.box {
+    margin: 20px;
+    padding: 10px 20px;
+    border: solid var(--primary-color) 2px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.mensagem div strong {
+    font-weight: 800;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #060020;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 2px;   
+}
+
+footer a:hover {
+    transition: .5s;
+    color: var(--primary-color);
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.7em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .mensagem {
+        font-size: 1.2em;
+    }
+}
