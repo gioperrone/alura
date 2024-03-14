@@ -35,6 +35,10 @@ h1 {
     margin: 0 10px;
 }
 
+h2 {
+    font-size: 3em;
+}
+
 p {
     font-size: 1.2em;
     margin: 20px 10px;
