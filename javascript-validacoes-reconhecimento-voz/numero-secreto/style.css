@@ -64,6 +64,22 @@ h3 {
     font-weight: 800;
 }
 
+.btn-jogar-novamente {
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: solid 3px var(--primary-color);
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-jogar-novamente:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    background: var(--primary-color);
+}
+
 footer {
     display: flex;
     align-items: center;
