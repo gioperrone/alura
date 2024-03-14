@@ -56,24 +56,28 @@ h3 {
 }
 
 footer {
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     bottom: 0;
     width: 100%;
+    height: 45px;
     background-color: #060020;
-    padding: 10px;
-    font-size: .9em;
 }
 
 footer a {
+    text-align: center;
+    font-size: .9em;
+    margin: 0 20px;
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    padding: 12px 2px;   
 }
 
 footer a:hover {
     transition: .5s;
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 
@@ -95,5 +99,9 @@ footer a:hover {
 
     .mensagem {
         font-size: 1.2em;
+    }
+
+    footer a {
+        font-size: .8em;
     }
 }
