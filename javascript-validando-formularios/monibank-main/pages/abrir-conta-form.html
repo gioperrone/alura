@@ -77,12 +77,14 @@
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required />
+                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text"
+                        minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
-                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date" required />
+                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date"
+                        required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__termos">
